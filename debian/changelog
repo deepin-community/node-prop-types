@@ -1,0 +1,77 @@
+node-prop-types (15.7.2+~15.7.3-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Use dh-sequence-nodejs
+  * Embed typescript definitions and repack
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 06 Dec 2020 08:33:05 +0100
+
+node-prop-types (15.7.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 15.7.2
+  * Add dependency to node-react
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 29 May 2020 21:37:25 +0200
+
+node-prop-types (15.6.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 15.6.2
+  * Remove node-fbjs dependency
+  * Fix debian/watch
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 11 Mar 2020 23:46:42 +0100
+
+node-prop-types (15.6.0+ds-4) unstable; urgency=medium
+
+  * Team upload
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Update debian/watch to use github repository
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Update webpack paths (Closes: #950091)
+  * Fix build dependencies
+  * Update lintian overrides
+  * Add debian/clean
+  * Update pkg-js-tools version and remove old debian/tests/* files
+  * Update copyright
+  * Update homepage
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 02 Feb 2020 11:52:17 +0100
+
+node-prop-types (15.6.0+ds-3) unstable; urgency=medium
+
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 05 Aug 2019 05:22:04 +0000
+
+node-prop-types (15.6.0+ds-2) experimental; urgency=medium
+
+  * Fix vcs: change to salsa
+  * Build with webpack 4 and uglifyjs.terser
+  * Bump debhelper compat to 12
+  * Bump standards version to 4.4.0
+  * Switch to pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 01 Aug 2019 11:25:02 +0200
+
+node-prop-types (15.6.0+ds-1) unstable; urgency=medium
+
+  * Remove generated files from source tarball
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 05 Jan 2018 11:54:26 +0530
+
+node-prop-types (15.6.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #886341)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 05 Jan 2018 00:10:58 +0530

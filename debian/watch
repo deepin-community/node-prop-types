@@ -1,0 +1,11 @@
+version=4
+opts=\
+dversionmangle=auto,\
+repacksuffix=+ds,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-prop-types-$1.tar.gz/ \
+ https://github.com/facebook/prop-types/tags .*/archive/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-prop-types,ctype=nodejs,pgpmode=none" \
+ https://registry.npmjs.org/@types/prop-types https://registry.npmjs.org/@types/prop-types/-/prop-types-([\d\.]+)@ARCHIVE_EXT@ group

@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	webpack --config debian/webpack.config.js --output-library=PropTypes \
+		--entry index.js --output ./prop-types.js --mode development
+	uglifyjs.terser prop-types.js -o prop-types.min.js
