@@ -2,8 +2,8 @@ version=4
 opts=\
 dversionmangle=auto,\
 repacksuffix=+ds,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-prop-types-$1.tar.gz/ \
- https://github.com/facebook/prop-types/tags .*/archive/v?([\d\.]+).tar.gz group
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-prop-types-$1/ \
+ https://github.com/facebook/prop-types/tags .*/archive/.*/v?([\d\.]+).tar.gz group
 
 # It is not recommended use npmregistry. Please investigate more.
 # Take a look at https://wiki.debian.org/debian/watch/

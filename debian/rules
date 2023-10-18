@@ -5,6 +5,5 @@
 	dh $@
 
 override_dh_auto_build:
-	webpack --config debian/webpack.config.js --output-library=PropTypes \
-		--entry index.js --output ./prop-types.js --mode development
-	uglifyjs.terser prop-types.js -o prop-types.min.js
+	NODE_ENV=development browserify index.js -t loose-envify --standalone PropTypes -o prop-types.js
+	terser -o prop-types.min.js prop-types.js

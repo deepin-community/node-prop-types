@@ -1,0 +1,2 @@
+# false positive
+node-prop-types source: very-long-line-length-in-source-file README.md line 253 is 586 characters long (>512)
