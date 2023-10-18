@@ -1,3 +1,53 @@
+node-prop-types (15.8.1+~15.7.5-2) unstable; urgency=medium
+
+  * Team upload
+  * Add dependency to node-react-is
+
+ -- Yadd <yadd@debian.org>  Sun, 10 Jul 2022 10:45:08 +0200
+
+node-prop-types (15.8.1+~15.7.5-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Ayoyimika Ajibade ]
+  * New upstream version 15.8.1+~15.7.4
+  * Update build command to webpack5
+  * Added lintian-overrides
+  * Enabled Upstream test
+  * properly configure test
+  * fix spyOn error
+  * migrate to jest 27.4.7
+  * rebase test command
+  * fix console error
+
+  [ Yadd ]
+  * Update typescript definitions
+  * Declare compliance with policy 4.6.1
+  * New upstream version 15.8.1+~15.7.5
+  * Build with node-browserify (Closes: #1002862)
+  * Drop test (needs an outdated jest)
+
+ -- Yadd <yadd@debian.org>  Tue, 31 May 2022 14:28:48 +0200
+
+node-prop-types (15.7.2+~15.7.4-2) unstable; urgency=medium
+
+  * team upload
+
+  * use and build-depend on terser (not uglifyjs.terser)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 02 Dec 2021 21:27:31 +0100
+
+node-prop-types (15.7.2+~15.7.4-1) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * New upstream version 15.7.2+~15.7.4
+
+ -- Yadd <yadd@debian.org>  Sun, 21 Nov 2021 17:30:23 +0100
+
 node-prop-types (15.7.2+~15.7.3-1) unstable; urgency=medium
 
   * Team upload

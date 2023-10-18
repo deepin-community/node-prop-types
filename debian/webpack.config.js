@@ -9,6 +9,7 @@ var config = {
     modules: ['/usr/share/nodejs','/usr/lib/nodejs'],
   },
   output: {
+    path: path.join(process.cwd(), './'),
     libraryTarget: 'umd'
   }
 }
